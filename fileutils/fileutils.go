@@ -11,7 +11,7 @@ import (
 )
 
 const debugCopypath = false
-const debugCopyfile = false
+const debugCopyfile = true
 
 // Copypath copies the contents of src to dst, excluding any file or
 // directory that starts with a period.

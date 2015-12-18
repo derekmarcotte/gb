@@ -1350,8 +1350,8 @@ func TestNoBuildStdlib(t *testing.T) {
 	t.Skip("constabulary/gb#505")
 	gb := T{T: t}
 	defer gb.cleanup()
-        gb.tempDir("src/")
-        gb.cd(gb.tempdir)
+	gb.tempDir("src/")
+	gb.cd(gb.tempdir)
 	defer gb.cleanup()
 	gb.runFail("build", "-f", "-F", "net/http")
 }
